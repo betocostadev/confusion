@@ -4,4 +4,4 @@
 This repo is based on module 1 of the course.
 Couse is available [here](https://www.coursera.org/specializations/full-stack-react)
 
-## Feel free to Fork and use it as you like.
+### Feel free to Fork and use it as you like.
