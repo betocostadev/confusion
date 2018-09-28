@@ -92,7 +92,62 @@
               <h3>Send us your Feedback</h3>
            </div>
             <div class="col-12 col-md-9">
-                Form goes here
+                <form action="">
+                  <div class="form-group row">
+                    <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                    <div class="col-md-10">
+                      <input type="text" name="firstName" id="firstName" placeholder="First Name" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                    <div class="col-md-10">
+                      <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                      <input type="tel" name="areaCode" id="areaCode" placeholder="Area Code" class="form-control">
+                    </div>
+                    <div class="col-7 col-md-7">
+                      <input type="tel" name="telNum" id="telNum" placeholder="Tel. Number" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="emailId" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                      <input type="email" name="emailId" id="emailId" placeholder="email@email.com" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-6 offset-md-2">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                        <label for="approve" class="form-check-label">
+                          <strong>May we contact you?</strong>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3 offset-md-1">
+                      <select class="form-control" name="options" id="options">
+                        <option value="appTel">Tel.</option>
+                        <option value="appMail">Email</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                    <div class="col-md-10">
+                      <textarea name="feedback" id="feedback" rows="10" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="offset-md-2 col-md-10">
+                      <button type="submit" class="btn btn-primary">Send Feedback</button>
+                    </div>
+                  </div>
+                </form>
             </div>
              <div class="col-12 col-md">
             </div>
