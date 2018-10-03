@@ -36,3 +36,8 @@ address {
 .navbar-dark {
   background-color: #512da8;
 }
+
+.blockquote {
+  padding: .5rem 1rem;
+  border-left: .25rem solid #eceeef;
+}
