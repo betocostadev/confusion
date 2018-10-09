@@ -41,3 +41,10 @@ address {
   padding: .5rem 1rem;
   border-left: .25rem solid #eceeef;
 }
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
