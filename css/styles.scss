@@ -1,0 +1,116 @@
+// Variables
+$lt-gray: #ddd;
+$background-dark: #512da8;
+$background-lite: #9575cd;
+$background-pale: #d1c4e9;
+
+// Carousel variable
+$carousel-item-height: 250px;
+
+// Border variable
+$border-solid-thin: 1px solid;
+$border-ridge-thin: 1px ridge;
+
+// SCSS Mixins
+
+@mixin zero-margin ($pad-up-dn, $pad-left-right) {
+  margin: 0 auto;
+  padding: $pad-up-dn $pad-left-right;
+}
+
+// CSS Classes
+
+.row-header {
+  @include zero-margin(0, 0);
+}
+
+.row-content {
+  @include zero-margin(50, 0);
+  border-bottom: $border-ridge-thin;
+  min-height: 400px;
+}
+
+.footer {
+  background-color: $background-pale;
+  @include zero-margin(20, 0);
+}
+
+.jumbotron {
+  @include zero-margin(70, 30);
+  background-color: $background-lite;
+  color: floralwhite;
+}
+
+address {
+  font-size: 80%;
+  margin: 0;
+  color: #0f0f0f;
+}
+
+body {
+  padding: 50px 0 0 0;
+  z-index: 0;
+}
+
+.navbar-dark {
+  background-color: $background-dark;
+}
+
+.tab-content {
+  border-left: $border-solid-thin $lt-gray;
+  border-right: $border-solid-thin $lt-gray;
+  border-bottom: $border-solid-thin $lt-gray;
+  padding: 10px;
+}
+
+.blockquote {
+  padding: .5rem 1rem;
+  border-left: .25rem solid #eceeef;
+}
+
+// Nesting
+
+.carousel {
+  background-color: $background-dark;
+  .carousel-item {
+    height: $carousel-item-height;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 250px;
+    }
+  }
+}
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+// Using NPM, just run:
+// npm install -g sass
+/* After installing you can check for this line in the package.json file:
+"devDependencies": {
+  "lite-server": "^2.3.0",
+  "node": "^10.12.0",
+  "sass": "^1.14.3" -> The sass module
+
+  Then, make this change in the file:
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
+  },
+
+  the css/ css/ is the origin/source of the files.
+
+  Finally, just run scss with node:
+  npm run scss
+  */
+  /* Se não funcionar, o melhor é fazer como no site do SASS.
+  sass nome do arquivo, nome do arquivo de output.css. Ex:
+  sass styles.scss styles.css
+  Ele também cria um arquivo map para facilitar no futuro. */

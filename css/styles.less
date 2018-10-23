@@ -4,7 +4,10 @@
 @background-pale: #d1c4e9;
 
 // height variables
-@carousel-item-height: 300px;
+@carousel-item-height: 250px;
+
+// border variable
+@borderthin: 1px solid;
 
 // Mixings
 
@@ -50,9 +53,9 @@ body {
 }
 
 .tab-content {
-  border-left: 1px solid @lt-gray;
-  border-right: 1px solid @lt-gray;
-  border-bottom: 1px solid @lt-gray;
+  border-left: @borderthin @lt-gray;
+  border-right: @borderthin @lt-gray;
+  border-bottom: @borderthin @lt-gray;
   padding: 10px;
 }
 
@@ -71,7 +74,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      min-height: 300px;
+      min-height: 250px;
     }
   }
 }
