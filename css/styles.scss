@@ -89,6 +89,20 @@ body {
   bottom: 0;
 }
 
+// MODALS
+
+.modal-header {
+  background: $background-dark;
+  .close, .modal-title {
+    color: floralwhite;
+  }
+}
+
+.modal-body {
+  background: $background-pale;
+}
+
+
 // Using NPM, just run:
 // npm install -g sass
 /* After installing you can check for this line in the package.json file:

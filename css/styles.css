@@ -57,6 +57,14 @@ body {
   right: 0;
   bottom: 0; }
 
+.modal-header {
+  background: #512da8; }
+  .modal-header .close, .modal-header .modal-title {
+    color: floralwhite; }
+
+.modal-body {
+  background: #d1c4e9; }
+
 /* After installing you can check for this line in the package.json file:
 "devDependencies": {
   "lite-server": "^2.3.0",
