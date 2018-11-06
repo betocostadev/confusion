@@ -52,6 +52,10 @@ body {
   z-index: 0;
 }
 
+#loginBtn:hover {
+  cursor: pointer;
+}
+
 .navbar-dark {
   background-color: $background-dark;
 }
@@ -101,7 +105,6 @@ body {
 .modal-body {
   background: $background-pale;
 }
-
 
 // Using NPM, just run:
 // npm install -g sass
