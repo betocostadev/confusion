@@ -106,6 +106,7 @@ body {
   background: $background-pale;
 }
 
+
 // Using NPM, just run:
 // npm install -g sass
 /* After installing you can check for this line in the package.json file:
@@ -133,3 +134,7 @@ body {
   Ele também cria um arquivo map para facilitar no futuro.
   Testing build with:
   npm run scss*/
+
+// Using task runners to improve the workflow:
+// Testing watch:scss
+// Should output the new file automatically.
