@@ -70,7 +70,7 @@ module.exports = function (grunt) {
                     dot: true,
                     cwd: './',
                     src: ['img/*.{png,jpg,gif}'],
-                    dest: 'dist'
+                    dest: 'dist/'
                 }]
             }
         },
